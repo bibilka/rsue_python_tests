@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "58e1a55f-6a32-43c3-ba73-0c85f8f0d2ac",
+		"name": "Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if user with id1 is Leanne Graham\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].name).to.eql(\"Leanne Graham\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 11,\r\n\"name\": \"Rajkumar SM\",\r\n\"username\": \"stm\",\r\n\"email\": \"user@testengineer.ru\",\r\n\"address\": {\r\n\"street\": \"Gagarina\",\r\n\"suite\": \"31\",\r\n\"city\": \"Moscow\",\r\n\"zipcode\": \"600007\",\r\n\"geo\": {\r\n\"lat\": \"10.0000\",\r\n\"lng\": \"80.0000\"\r\n}\r\n},\r\n\"phone\": \"1-2345-6-7890\",\r\n\"website\": \"testengineer.ru\",\r\n\"company\": {\r\n\"name\": \"testengineer.ru\",\r\n\"catchPhrase\": \"website for QA engineers\",\r\n\"bs\": \"real-time tutorials\"\r\n}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
