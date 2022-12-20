@@ -1,0 +1,216 @@
+{
+  "id": "eebbcdc5-cda9-4497-b9f6-3f358bf40b42",
+  "version": "2.0",
+  "name": "Testing. Lab3",
+  "url": "https://rsue.ru/",
+  "tests": [{
+    "id": "552a003b-3263-4718-9919-654e7b3c10c8",
+    "name": "auth and logout",
+    "commands": [{
+      "id": "14040682-a643-41ae-a2d1-d999a7c303e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://rsue.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "437b0878-2b28-4d93-8255-4da615fed22b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Личный кабинет",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "942fe1f5-6efa-4025-beb2-ea9047125bc5",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_LOGIN",
+      "targets": [],
+      "value": "vorotintcevav"
+    }, {
+      "id": "98d07dfb-d96e-45b9-bbb3-ea54e1c94fde",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_PASSWORD",
+      "targets": [],
+      "value": "7xq4otaweb9k"
+    }, {
+      "id": "baae7d6e-16c7-4bab-9881-fca68b5a1660",
+      "comment": "",
+      "command": "click",
+      "target": "name=Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a847946-f87f-4f97-8094-becb9c49addf",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout_butt",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "09a92ed2-d37f-4c57-90e5-947d18a22b3c",
+    "name": "auth and logout #2",
+    "commands": [{
+      "id": "8b8fc04e-aa73-446c-87f1-acd473f488e2",
+      "comment": "",
+      "command": "open",
+      "target": "https://do.rsue.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed3958a9-264d-4a13-b2b6-50b66977968b",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "vorotintcevav"
+    }, {
+      "id": "3214585c-8c2d-4506-a4ff-af365ba91f61",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "7xq4otaweb9k"
+    }, {
+      "id": "cec702ef-a1b5-465b-a773-afe7d7c16e3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1aaac815-3743-41f6-94da-30d2940edc60",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c50616ac-4d68-40e1-bd84-2219922de0dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выход",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4e90cd90-48ed-4937-827e-271736885aa8",
+    "name": "adminqa.neapro.site login",
+    "commands": [{
+      "id": "f2d95615-223b-40ec-83ea-1388fca5d4b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://adminqa.neapro.site/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba56f60a-76f7-4bd0-898b-606370c8d7d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=admin_email",
+      "targets": [],
+      "value": "moderat@neapro.ru"
+    }, {
+      "id": "422b129b-0ca6-4132-bf5d-851de95bb550",
+      "comment": "",
+      "command": "type",
+      "target": "id=admin_password",
+      "targets": [],
+      "value": "Aa123456"
+    }, {
+      "id": "1b2335e7-1cf6-41df-9504-1f97cbc48ceb",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "47b0e953-56cf-429f-9136-ede8a7fcaaea",
+    "name": "qa.neapro.site login",
+    "commands": [{
+      "id": "2be96b37-acbd-49a6-9704-082fadbcf9fe",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.neapro.site/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49ce65f7-9dd7-4123-9f37-46ca4fe13e01",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fieldset:nth-child(1) input",
+      "targets": [
+        ["css=.fieldset:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "blackleprosy@gmail.com"
+    }, {
+      "id": "72596359-c2ad-4bd0-8b33-6cbb36588c1e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fieldset:nth-child(2) input",
+      "targets": [
+        ["css=.fieldset:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456789"
+    }, {
+      "id": "904c45d5-1943-4d13-aab8-dfdb824c52b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "14a09346-cb9f-4e33-88e3-7f5246127bce",
+    "name": "blog check article",
+    "commands": [{
+      "id": "1023a578-b02b-4cfd-affd-26af9da0d3b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://блог.новео.рф",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee95ccf1-7871-4974-88b1-4d0bdea7e886",
+      "comment": "",
+      "command": "click",
+      "target": "css=.post-list-unit:nth-child(10) .post-list-unit__title",
+      "targets": [
+        ["css=.post-list-unit:nth-child(10) .post-list-unit__title", "css:finder"],
+        ["xpath=//article[10]/a/div[2]/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Валидация данных в Nest')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea3aeb92-24cb-43a3-98c6-e8df20b11da8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.single-post__title",
+      "targets": [
+        ["css=.single-post__title", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Валидация данных в Nest')]", "xpath:innerText"]
+      ],
+      "value": "Валидация данных в Nest"
+    }]
+  }],
+  "suites": [{
+    "id": "fc3a06cc-21b8-4674-a7ff-39fb47919f83",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["552a003b-3263-4718-9919-654e7b3c10c8"]
+  }],
+  "urls": ["https://rsue.ru/"],
+  "plugins": []
+}
